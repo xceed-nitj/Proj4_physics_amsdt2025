@@ -34,6 +34,8 @@ const Timeline = forwardRef((props, ref) => {
         lg:flex-row lg:justify-evenly lg:items-start
         mx-auto px-5 sm:px-10
         min-h-[200px]
+        mb-20
+        text-lg
       "
     >
       <div className=" w-full pr-4">
@@ -59,7 +61,7 @@ const Timeline = forwardRef((props, ref) => {
             <div className="mx-auto w-1 h-2.5 grow-0 bg-gradient-to-t from-transparent to-[#2563eb] rounded-b" />
           </div>
 
-          <ul className="relative space-y-8 pl-10 md:pl-12 lg:pl-0">
+          <ul className="relative space-y-16 pl-10 md:pl-12 lg:pl-0">
             {datesData.map((item, idx) =>
               idx % 2 === 0 ? (
                 <li
@@ -125,7 +127,7 @@ const Timeline = forwardRef((props, ref) => {
                   {/* date */}
                   <div className="px-4 py-2 lg:w-60 absolute lg:top-0 lg:left-0 lg:bottom-0 lg:-translate-x-full lg:flex lg:flex-col lg:text-right lg:mt-4 lg:py-0 lg:pr-6">
                     {!item.extended ? (
-                      <p className="font-medium text-md text-[#2563eb]">
+                      <p className="font-medium text-md text-[#2563eb] lg:text-right">
                         {formatDate(item.date)}
                       </p>
                     ) : (

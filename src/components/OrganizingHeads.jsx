@@ -120,7 +120,7 @@ const OrganizingHeads = () => {
         {renderSection("Chief Patrons", patrons)}
         {renderSection("Patrons", coPatrons)}
         {renderSection("Co-Patron", coPatrons2)}
-        {renderSection("Chairman/Convenor", chairman)}
+        {renderSection("Chairman/Convener", chairman)}
         {renderSection("Organising Secretaries", secretary)}
       </div>
 

@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import TextSlider from "./TextSlider";
 
 const sliderData = [
-  { image: "/slider1.jpg", label: "NITJ has been ranked in the 2025 THE (Times Higher Education) Asia University Rankings in the ranking band of 351-400" },
   { image: "/slider2.jpg", label: "NITJ Ranked 58th in Engineering Category and Rank-Band: 101-150 in Overall Ranking of NIRF Ranking, 2024" },
+  { image: "/slider1.jpg", label: "NITJ has been ranked in the 2025 THE (Times Higher Education) Asia University Rankings in the ranking band of 351-400" },
   { image: "/slider3.webp", label: "NITJ has been ranked in the 2025 THE (Times Higher Education) Engineering and Technology in the ranking band of 801-1000" },
   { image: "/slider4.jpg", label: "NITJ has been ranked in the THE (Times Higher Education) World University Rankings 2025 in the ranking band of 1001-1200" },
   { image: "/slider5.jpeg", label: "NITJ Placed in ranking band of 661-680 amongst Asian Universities" },

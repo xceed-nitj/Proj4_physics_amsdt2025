@@ -142,7 +142,7 @@ const Footer = () => {
               </li>
                <li className="flex items-start">
                 <span className="inline-block w-1.5 h-1.5 bg-[#2563eb] rounded-full mr-3 mt-1.5"></span>
-                <span className="text-base">Dr Shisram Rebari (Organizing Secretary): +91 8054160882</span>
+                <span className="text-base">Dr Shishram Rebari (Organizing Secretary): +91 8054160882</span>
               </li>
               <li className="flex items-center">
                 <span className="inline-block w-1.5 h-1.5 bg-[#2563eb] rounded-full mr-3"></span>

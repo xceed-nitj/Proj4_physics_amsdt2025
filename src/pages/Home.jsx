@@ -19,6 +19,7 @@ import Navbar from "../components/Navbar";
 // import VideoGallery from "../components/VideoGallery";
 // import DriveLinks from "../components/Drivelink";
 import OrganizingHeads from "../components/OrganizingHeads";
+import Sponsors from "../components/Sponsors.jsx";
 // import AboutNews from "./components/Dummy";
 function Home(props) {
   useEffect(() => {
@@ -74,6 +75,7 @@ function Home(props) {
       <OrganizingHeads />
 
       {/* <SponsorShip confid={props.confId} /> */}
+      <Sponsors />
       <Footer />
       
     </div>

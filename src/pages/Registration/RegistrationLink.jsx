@@ -49,34 +49,11 @@ function RegistrationLink() {
 
                         </div>
 
-                        {/* <div className="mt-8 p-4 bg-[#2563eb]/5 border-l-4 border-[#2563eb] rounded">
-                            <p className="font-medium text-[#2563eb]">Important Note:</p>
-                            <p className="mt-2">An additional late registration fee of Rs. 1000/- applies to all categories after registration deadline.</p>
-                        </div> */}
-
-                        {/* <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="p-5 bg-white border border-[#2563eb]/30 rounded-lg"> */}
-                        <h3 className="text-xl font-bold text-[#2563eb] mb-3">Guidelines for Registration</h3>
-                        <ul className="space-y-2 list-disc pl-5">
-                            <ul className="space-y-2 list-disc pl-5">
-                                <li>Selected abstract will be accepted for presentation. After the acceptance of the abstract, the authors are required to register for the conference by paying the registration fees.</li>
-                                <li>Please pay the registration fee only through the payment portal provided on the conference website. No other means of fee payment will be accepted.</li>
-                                <li>After the acceptance of the abstract for presentation, at least one of the authors of an accepted abstract must register for the conference in order to present it.</li>
-                                <li>If more than one author of an accepted abstract wishes to attend the conference, they need to register separately.</li>
-                                <li>Students are requested to upload their valid student ID cards (front and back sides) during the online registration process.</li>
-                                <li>The registration fee includes the conference kit, access/admission to technical sessions, and all conference meals. Any gateway charges incurred will be borne by the registrant.</li>
-                                <li>The registration fee is non-refundable and non-transferable.</li>
-                                <li>Please keep a copy of the transaction receipt.</li>
-                                <li>Please note that AMSDT-2025 will not be responsible for any loss, financial or otherwise, caused by improper transactions conducted online. While the organizers have taken all reasonable precautions to ensure a safe online transaction, it is the registrant’s responsibility to secure their user IDs, passwords, Paper ID, transaction ID, etc., when paying the registration fee.</li>
-                            </ul>
-
-                        </ul>
-                    </div>
-                </div>
-                {/* </div>
-                </div> */}
-
+                       
             </div>
+
+ </div>
+ </div>
 
             <Footer />
         </div>
