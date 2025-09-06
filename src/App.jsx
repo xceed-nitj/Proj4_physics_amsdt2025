@@ -21,7 +21,7 @@ import Tracks from "./pages/Tracks";
 import OrganizingHeads from "./pages/Committee/OrganizingHeads";
 import AdvisoryCommittee from "./pages/Committee/AdvisoryCommittee";
 // import LocalCommittee from "./pages/Committee/LocalCommittee";
-import Speakers from "./pages/speakersfront";
+import Speaker from "./components/Speaker";
 import Publications from "./pages/Publications";
 import Awards from "./pages/awards";
 import Sponsors from "./pages/Sponsors";
@@ -49,7 +49,7 @@ function App() {
         <Route path="accommodation" element={<Accommodation confid={confid}/>} />
         {/* <Route path="hotelslist" element={<Hotels confid={confid}/>} /> */}
         {/* <Route path="souvenir" element={<Souvenir />} /> */}
-        <Route path="speakers" element={<Speakers confid={confid} />} />
+        <Route path="speakers" element={<Speaker confid={confid} />} />
         {/* <Route path="invitedspeakers" element={<InvitedSpeakerPage confid={confid} />} /> */}
         <Route path="registrationfee" element={<RegistrationFee confid={confid} />} />
         <Route path="registrationlink" element={<RegistrationLink />} />

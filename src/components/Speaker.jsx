@@ -3,6 +3,8 @@ import { useState, useEffect, forwardRef } from 'react';
 import axios from "axios";
 import getEnvironment from "../getenvironment";
 import { Link } from "react-router-dom";
+import Navbar from '../components/Navbar';
+
 
 const Speaker = forwardRef((props, ref) => {
   const confid = props.confid;
@@ -29,10 +31,22 @@ const Speaker = forwardRef((props, ref) => {
   }, [apiUrl, confid]);
 
   return (
+    <div className="bg-white min-h-screen relative overflow-hidden">
+                {/* Background decorative elements */}
+                <div className="absolute inset-0 pointer-events-none opacity-10">
+                    <div className="absolute w-[800px] h-[800px] border border-[#2563eb]/10 rounded-full -right-1/4 top-1/4 transform -translate-y-1/2"></div>
+                    <div className="absolute w-[500px] h-[500px] border border-[#2563eb]/15 rounded-full -left-1/4 bottom-1/4"></div>
+                    <div className="absolute w-3 h-3 bg-[#2563eb] rounded-full left-[10%] top-[20%] animate-pulse"></div>
+                    <div className="absolute w-2 h-2 bg-[#2563eb] rounded-full right-[15%] bottom-[30%] animate-pulse"></div>
+                </div>
+    
+                <div className="top-0 w-screen z-40">
+                    <Navbar />
+                </div>
     <div ref={ref} className="bg-white container space-y-8 lg:max-w-7xl py-16 mx-auto px-8 sm:px-10 lg:px-8 md:pb-5">
       <h2 className="text-4xl font-sans font-bold text-center text-[#2563eb] mb-8">Our Speakers</h2>
       
-      <div className="w-24 h-1 bg-gradient-to-r from-[#2563eb] to-transparent mx-auto mb-10"></div>
+      <div className="w-24 h-1  mx-auto mb-10"></div>
       
       <div className="w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-4">
@@ -81,6 +95,8 @@ const Speaker = forwardRef((props, ref) => {
         </div>
       </div>
     </div>
+    </div>
+
   );
 });
 
