@@ -1,6 +1,6 @@
-# Chemcon 2024
+# ADMST
 
-Hello! This is the repository for the Chemcon 2024 website. This website is built using React. Here are some instructions on how to get started with the project.
+Hello! This is the repository for the AD MAT 2024 website. This website is built using React. Here are some instructions on how to get started with the project.
 
 ## Enabling ESLint in VS Code
 
