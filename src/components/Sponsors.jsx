@@ -1,6 +1,39 @@
 // import React from "react";
+import { useEffect, useState } from 'react';
+import axios from "axios";
+import getEnvironment from "../getenvironment";
 
-const Sponsors = () => {
+const Sponsors = (props) => {
+    const templateid = "68bef7a2a4dc6719ed62cd2c";
+    const confid = props.confid;
+    const [data, setData] = useState(null)
+    const [apiUrl, setApiUrl] = useState(null);
+
+useEffect(() => {
+    getEnvironment().then(url => {
+        setApiUrl(url);
+        console.log("Fetched environment URL:", url);
+    });
+}, []);
+
+    
+    useEffect(() => {
+        // window.scrollTo(0, 0);
+
+        if (apiUrl) {
+            axios.get(`${apiUrl}/conferencemodule/commontemplate/${confid}/${templateid}`, {
+                withCredentials: true
+            })
+            
+                .then(res => {
+                    console.log("Fetched sponsor data:", res.data);
+
+                    setData(res.data);
+                    console.log(res.data);
+                })
+                .catch(err => console.log(err))
+        }
+    }, [apiUrl, confid]);
     return (
         <div className="bg-white w-full py-16 relative overflow-hidden">
             {/* === Animated Background === */}
@@ -23,13 +56,19 @@ const Sponsors = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-black mb-2 text-[#2563eb] inline-flex items-center justify-center relative">
-                        Sponsor
+                        Sponsors
                         <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-[#2563eb]"></span>
                     </h2>
                     <div className="flex flex-col items-center justify-center mt-8 mb-16">
-                        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-8 md:gap-16">
+                        {/* <div className="flex flex-col md:flex-row flex-wrap justify-center gap-8 md:gap-16">
                             <img src="/DRDO logo.jpg" className="rounded-full" alt="" />
-                        </div>
+                        </div> */}
+                         <div className="text-gray-700 prose prose-invert max-w-none">
+    <div
+      dangerouslySetInnerHTML={{ __html: data?.description }}
+    />
+</div>
+
                     </div>
                 </div>
             </div>

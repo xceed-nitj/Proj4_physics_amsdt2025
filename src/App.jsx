@@ -25,6 +25,7 @@ import Speaker from "./components/Speaker";
 import Publications from "./pages/Publications";
 import Awards from "./pages/awards";
 import Sponsors from "./pages/Sponsors";
+import Sponsorslist from "./pages/Sponsorslist";
 import Guidelines from "./pages/Guidelines";
 
 function App() {
@@ -62,7 +63,7 @@ function App() {
         <Route path="advisorycommittee" element={<AdvisoryCommittee confid={confid} />} />    
         {/* <Route path="localcommittee" element={<LocalCommittee confid={confid} />} /> */}
         <Route path="publications" element={<Publications confid={confid} />} />
-
+        <Route path="sponsorslist" element={<Sponsorslist confid={confid} />} />
 
       </Routes >
       </div>

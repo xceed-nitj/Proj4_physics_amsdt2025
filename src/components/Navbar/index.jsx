@@ -26,7 +26,15 @@ const navigation = [
   { name: "Publications", href: "/publications", current: false },
   { name: "List of Speakers", href: "/speakers", current: false },
   { name: "Awards", href: "/awards", current: false },
-  { name: "Sponsors", href: "/sponsors", current: false },
+  { name: "Sponsors", href: "/sponsors", current: false,
+     subItems: [
+      { name: "Sponsorship Opportunities", href: "/sponsors" },
+      { name: "List of Sponsors", href: "/sponsorslist" },
+    ],
+
+
+
+  },
   {
     name: "Committees",
     href: "",

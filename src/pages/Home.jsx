@@ -75,7 +75,7 @@ function Home(props) {
       <OrganizingHeads />
 
       {/* <SponsorShip confid={props.confId} /> */}
-      <Sponsors />
+      <Sponsors confid={props.confId}/>
       <Footer />
       
     </div>
