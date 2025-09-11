@@ -27,7 +27,7 @@ const TextSlider = () => {
           </span>
         </div>
       </div>
- <div className="w-full bg-white flex justify-center py-4">
+ <div className="w-full bg-white flex justify-center py-4 mt-6">
         <p className="text-red-600 text-xl md:text-2xl font-bold animate-pulse text-center">
           📢 Paper Submission Deadline Extended 🚨
         </p>
