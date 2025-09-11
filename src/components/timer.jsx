@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 
 const countdownTargets = {
-  submission: new Date('2025-09-26T23:59:59'),
+  submission: new Date('2025-09-25T23:59:59'),
   registration: new Date('2025-09-30T23:59:59'),
   conference: new Date('2025-11-07T09:00:00'),
-  acceptance: new Date('2025-09-26T09:00:00'),
+  acceptance: new Date('2025-09-25T23:59:59'),
 };
 
 const getTimeLeft = (targetDate) => {
