@@ -11,13 +11,22 @@ const TextSlider = () => {
     const combined = sliderData.join(" \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ");
     // console.log("Combined Text:", combined);
     return (
-        <div className="w-full overflow-hidden whitespace-nowrap bg-blue-800 text-white text-center py-6 px-4 flex items-center">
-            <div className="inline-block wave-strip">
-                {/* Duplicate content for seamless scrolling */}
-                <span className="px-4 text-lg sm:text-xl md:text-2xl font-semibold">{combined}</span>
-                <span className="px-4 text-lg sm:text-xl md:text-2xl font-semibold">{combined}</span>
-            </div>
-        </div>
+       <div className="w-full overflow-hidden whitespace-nowrap bg-blue-800 text-white text-center py-6 px-4 flex items-center">
+  <div className="inline-block wave-strip">
+    {/* Duplicate content for seamless scrolling */}
+    <span className="px-4 text-lg sm:text-xl md:text-2xl font-semibold">{combined}</span>
+    <span className="px-4 text-lg sm:text-xl md:text-2xl font-semibold">{combined}</span>
+  </div>
+</div>
+
+{/* Extended Deadline Section */}
+<div className="w-full bg-white text-center py-4">
+  <p className="text-red-600 text-xl md:text-2xl font-bold animate-pulse">
+    **Paper Submission Deadline Extended**
+  </p>
+</div>
+
+        
     )
 }
 
