@@ -9,14 +9,14 @@ const Sponsors = (props) => {
     const [data, setData] = useState(null)
     const [apiUrl, setApiUrl] = useState(null);
 
-useEffect(() => {
-    getEnvironment().then(url => {
-        setApiUrl(url);
-        console.log("Fetched environment URL:", url);
-    });
-}, []);
+    useEffect(() => {
+        getEnvironment().then(url => {
+            setApiUrl(url);
+            console.log("Fetched environment URL:", url);
+        });
+    }, []);
 
-    
+
     useEffect(() => {
         // window.scrollTo(0, 0);
 
@@ -24,7 +24,7 @@ useEffect(() => {
             axios.get(`${apiUrl}/conferencemodule/commontemplate/${confid}/${templateid}`, {
                 withCredentials: true
             })
-            
+
                 .then(res => {
                     console.log("Fetched sponsor data:", res.data);
 
@@ -59,16 +59,18 @@ useEffect(() => {
                         Sponsors
                         <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-[#2563eb]"></span>
                     </h2>
-                    <div className="flex flex-col items-center justify-center mt-8 mb-16">
+                    <div 
+                        className="text-gray-700 md:flex md:justify-center max-w-none"
+                        style={{ width: '100%', overflowX: 'auto' }}
+                    >
                         {/* <div className="flex flex-col md:flex-row flex-wrap justify-center gap-8 md:gap-16">
                             <img src="/DRDO logo.jpg" className="rounded-full" alt="" />
                         </div> */}
-                         <div className="text-gray-700 prose prose-invert max-w-none">
-    <div
-      dangerouslySetInnerHTML={{ __html: data?.description }}
-    />
-</div>
-
+                        <div 
+                            dangerouslySetInnerHTML={{ __html: data?.description }}
+                            // The inner div is what holds the image, so we add a style here.
+                            style={{ maxWidth: 'none' }}
+                        />
                     </div>
                 </div>
             </div>
