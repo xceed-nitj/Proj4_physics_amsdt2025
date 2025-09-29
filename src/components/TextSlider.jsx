@@ -27,12 +27,17 @@ const TextSlider = () => {
           </span>
         </div>
       </div>
- <div className="w-full bg-white flex justify-center py-4 mt-6">
+      <div className="w-full bg-white flex justify-center py-4 mt-6">
         <p className="text-red-600 text-xl md:text-2xl font-bold animate-pulse text-center">
           📢 Submission Deadline Extended 🚨
         </p>
       </div>
-     
+      <div className="w-full bg-white flex justify-center py-4 mt-0">
+        <p className="text-red-600 text-xl md:text-2xl font-bold animate-pulse text-center md:px-10">
+          📢 Publications: peer-reviewed and Selected papers from the conference will be published by Springer as a proceedings from the book volume
+        </p>
+      </div>
+
     </>
   );
 };
