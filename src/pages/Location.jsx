@@ -15,10 +15,10 @@ function Location(props) {
         getEnvironment().then(url => setApiUrl(url));
     }, []);
 
-    useEffect(() => {
+  useEffect(() => {
         window.scrollTo(0, 0);
         if (apiUrl) {
-            axios.get(`${apiUrl}/conferencemodule/location/${confid}`, {
+            axios.get(`${apiUrl}/conferencemodule/commontemplate/conference/${confid}`, {
                 withCredentials: true
             })
                 .then(res => {
@@ -28,7 +28,7 @@ function Location(props) {
                 .catch(err => console.log(err))
         }
     }, [apiUrl, confid]);
-
+   
     useEffect(() => {
         window.scrollTo(0, 0);
         if (apiUrl) {
@@ -66,7 +66,7 @@ function Location(props) {
                     <div className="w-40 h-1 bg-blue-600 mb-4"></div>
                     {data ? (
                         <div className="text-gray-700 prose prose-invert max-w-none">
-                            <div dangerouslySetInnerHTML={{ __html: data.description }} />
+                            <div dangerouslySetInnerHTML={{ __html: data[12].description }} />
                         </div>
                     ) : (
                         <div className="animate-pulse">
