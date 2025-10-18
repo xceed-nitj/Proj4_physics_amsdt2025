@@ -37,7 +37,7 @@
       ],
     },
    
-    { name: "Location", href: "/location", current: false },
+    { name: "How to reach NITJ", href: "/location", current: false },
     { name: "Accommodation", href: "/accommodation", current: false },
   ];
 
